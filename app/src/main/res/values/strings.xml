@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Smart Charity</string>
+    <string name="ifHasAccount">Already have an Account ?</string>
+    <string name="SignUpChar">Sign up as charity ?</string>
+    <string name="register">Register</string>
+    <string name="charity_number">Charity Number</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="charity_name">Charity Name</string>
+    <string name="login_as_charity">Login as Charity</string>
+    <string name="create_account"> Don\'t have account ? Register </string>
+    <string name="login">Login</string>
+    <string name="waiting">Waiting</string>
+    <string name="donate">Donate</string>
+    <string name="delivered">Delivered</string>
+    <string name="type">Type</string>
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="desc">Description</string>
+    <string name="confirm">Confirm</string>
+    <string name="charity">Charity</string>
+    <string name="profile">Profile</string>
+    <string name="aboutus">About Us</string>
+    <string name="logout">Log Out</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_new_password">Retype new Password</string>
+    <string name="waiting_reply">Waiting reply</string>
+    <string name="contacting">Contacting...</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="condition">Condition</string>
+    <string name="donor">Donor</string>
+    <string name="title_activity_charity_view_donation">donation</string>
+
+</resources>

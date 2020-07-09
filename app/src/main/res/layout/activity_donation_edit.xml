@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.charity.DonationEditActivity"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_gravity="top"
+    android:padding="10dp"
+    android:weightSum="10">
+
+
+
+        //type
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/type"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="2"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_donation_type"
+                android:entries="@array/type_array"
+                android:prompt="@string/type"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="7"/>
+        </LinearLayout>
+
+
+        //Name
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/name"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/et_donation_name"
+                android:hint="@string/name"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="20dp"
+                android:layout_weight="7"/>
+        </LinearLayout>
+
+
+
+
+        //Charity
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/charity"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="2"/>
+
+            <!-- <EditText
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:hint="@string/charity_name"
+                 android:layout_margin="5dp"
+                 android:layout_marginLeft="0dp"
+                 android:textSize="20dp"
+                 android:layout_weight="7" />-->
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_charity"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="7"/>
+        </LinearLayout>
+
+
+        //description
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/desc"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_donation_desc"
+                android:layout_margin="5dp"
+                android:hint="@string/desc"
+                android:textSize="20dp"
+                android:lines="3"/>
+        </LinearLayout>
+
+
+        //confirmation button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/btnConfDonation"
+            android:text="@string/confirm"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1080335989094",
+    "firebase_url": "https://smart-charity9.firebaseio.com",
+    "project_id": "smart-charity9",
+    "storage_bucket": "smart-charity9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080335989094:android:375db93af0f491922530a7",
+        "android_client_info": {
+          "package_name": "ahmedabdo_so.charity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080335989094-uhmkpdc9gf93kmmo94fiiq29f9nivmb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkV-KhxdHywNM7DtDfGQoU7KkLFmO1XIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080335989094-uhmkpdc9gf93kmmo94fiiq29f9nivmb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

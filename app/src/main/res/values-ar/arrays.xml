@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_array" >
+        <item>مال</item>
+        <item>غذاء</item>
+        <item>ملابس</item>
+    </string-array>
+    <string-array name="all_types_array" >
+        <item>أي نوع</item>
+        <item>مال</item>
+        <item>غذاء</item>
+        <item>ملابس</item>
+    </string-array>
+</resources>

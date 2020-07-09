@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.charity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/donation"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/donation"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".CharityViewDonationActivity"
+            android:label="@string/title_activity_charity_view_donation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".DonationEditActivity" />
+        <activity android:name=".ViewDonationActivity" />
+        <activity android:name=".EditPasswordActivity" />
+        <activity android:name=".CharityProfileActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".CharityMainActivity" />
+        <activity android:name=".CharityLoginActivity" />
+        <activity android:name=".CharitySignupActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

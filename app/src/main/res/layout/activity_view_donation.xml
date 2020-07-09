@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.charity.ViewDonationActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/type"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_donation_type_item"
+            android:prompt="@string/type"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    //Name
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_donation_name_item"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+    //Charity
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/charity"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_charity_name_item"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/condition"
+            android:autoSizeTextType="uniform"
+            android:lines="1"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_state_item"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+    //description
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_margin="5dp"
+            android:text="@string/desc"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_donation_desc_item"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_margin="5dp"
+
+            android:hint="@string/desc"
+            android:lines="3"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/ll_buttons">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEdit"
+            android:text="@string/edit"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_margin="15dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDelete"
+            android:text="@string/delete"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_margin="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

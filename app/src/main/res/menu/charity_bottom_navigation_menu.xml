@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_under_contact"
+        android:icon="@drawable/contact"
+        android:title="Under Contact" />
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/search"
+        android:title="Search" />
+    <item
+        android:id="@+id/navigation_char_delivered"
+        android:icon="@drawable/done"
+        android:title="@string/delivered" />
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/menu"
+        android:title=""/>
+</menu>
