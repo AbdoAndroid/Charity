@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
         //the default fragment that opens at the start of running
         openFragment(WaitingFragment.newInstance("",""));
 
-
-        Bundle bundle=new Bundle();
-
     }
 
     //helping fun -> it toggles between the fragments of the bottom nav bar
