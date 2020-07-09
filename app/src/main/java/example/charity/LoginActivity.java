@@ -1,11 +1,8 @@
 package example.charity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -13,6 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,9 +24,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import example.charity.Model.Donation;
-import example.charity.Model.Doner;
 
 public class LoginActivity extends AppCompatActivity {
     EditText etPassword,et_phoneNum;

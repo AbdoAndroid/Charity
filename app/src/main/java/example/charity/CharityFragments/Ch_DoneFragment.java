@@ -29,7 +29,6 @@ import example.charity.Adapter.ItemAdapter;
 import example.charity.CharityViewDonationActivity;
 import example.charity.Model.Donation;
 import example.charity.R;
-import example.charity.ViewDonationActivity;
 
 import static android.content.Context.MODE_PRIVATE;
 

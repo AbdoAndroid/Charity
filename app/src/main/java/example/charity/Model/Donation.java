@@ -1,9 +1,5 @@
 package example.charity.Model;
 
-import java.lang.reflect.Array;
-
-import example.charity.R;
-
 public class Donation {
     String id,doner,charity,type,city,name,state,description;
 
