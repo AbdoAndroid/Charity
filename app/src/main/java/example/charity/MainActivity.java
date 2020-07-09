@@ -24,6 +24,37 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    //(defining) dedicated navigation listener for the bottom nav bar(instead of putting inside onCreate fun)
+    BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()) {
+                        case R.id.navigation_waiting:
+                            openFragment(new WaitingFragment());
+                            return true;
+                        case R.id.navigation_donate:
+                            openFragment(new AddFragment());
+                            return true;
+                        case R.id.navigation_delivered:
+                            openFragment(new DoneFragment());
+                            return true;
+                        case R.id.navigation_menu:
+                            openFragment(new MenuFragment());
+                            return true;
+                    }
+                    return false;
+                }
+            };
+
+    //helping fun -> it toggles between the fragments of the bottom nav bar
+    public void openFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,40 +66,9 @@ public class MainActivity extends AppCompatActivity {
         //setting the nav bar listener
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
         //the default fragment that opens at the start of running
-        openFragment(WaitingFragment.newInstance("",""));
+        openFragment(new WaitingFragment());
 
     }
-
-    //helping fun -> it toggles between the fragments of the bottom nav bar
-    public void openFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
-
-    //(defining) dedicated navigation listener for the bottom nav bar(instead of putting inside onCreate fun)
-    BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.navigation_waiting:
-                            openFragment(WaitingFragment.newInstance("", ""));
-                            return true;
-                        case R.id.navigation_donate:
-                            openFragment(AddFragment.newInstance("", ""));
-                            return true;
-                        case R.id.navigation_delivered:
-                            openFragment(DoneFragment.newInstance("", ""));
-                            return true;
-                        case R.id.navigation_menu:
-                            openFragment(MenuFragment.newInstance("", ""));
-                            return true;
-                    }
-                    return false;
-                }
-            };
 
 
     @Override
